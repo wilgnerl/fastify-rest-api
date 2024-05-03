@@ -2,7 +2,7 @@ import { FastifyInstance } from 'fastify'
 import { z } from 'zod'
 import { knex } from '../database'
 import crypto from 'node:crypto'
-import { checkSessionIdExists } from '../middlewares/check-session-id-exists'
+import { checkSessionIdExists } from '../middlewares'
 
 export async function mealsRoutes(app: FastifyInstance) {
   app.post(
